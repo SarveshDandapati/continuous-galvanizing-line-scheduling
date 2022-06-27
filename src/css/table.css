@@ -1,0 +1,25 @@
+.table-container{
+  overflow-x:auto;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 0.5px 1px;
+}
+th {
+  background-color: rgba(110, 216, 133, 0.326);
+}
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+caption {
+  padding: 10px;
+}

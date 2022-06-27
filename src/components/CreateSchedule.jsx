@@ -1,7 +1,7 @@
 import React from "react";
 function createSchedule() {
   return (
-      <form>
+      <form className="create-schedule-container">
         <section className="create-schedule">
           <div className="create-schedule__container-1">
             <div className="galv-type">

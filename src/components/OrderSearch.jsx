@@ -2,7 +2,7 @@ import React from "react";
 
 function orderSearch(){
     return(
-        <form>
+        <form className="order-search-container">
             <input type='radio' id='ibm-order' name='order-type' value='ibm'/>
             <label for='ibm-order'>IBM Order</label>
             <input type='radio' id='sap-order' name='order-type' value='sap'/>
