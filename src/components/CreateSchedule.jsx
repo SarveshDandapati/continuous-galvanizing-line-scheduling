@@ -6,32 +6,32 @@ function createSchedule() {
           <div className="create-schedule__container-1">
             <div className="galv-type">
               <input type="radio" id="girs" name="galv-type" value="girs" />
-              <label for="girs">GI/RS</label> <br />
+              <label htmlFor="girs">GI/RS</label> <br />
               <input type="radio" id="gizs" name="galv-type" value="gizs" />
-              <label for="gizs">GI/ZS</label> <br />
+              <label htmlFor="gizs">GI/ZS</label> <br />
               <input type="radio" id="ga" name="galv-type" value="ga" />
-              <label for="ga">GA</label> <br />
+              <label htmlFor="ga">GA</label> <br />
             </div>
             <div className="export">
-              <input type="radio" id="all" name="export" value="all" checked />
-              <label for="all">All</label> <br />
+              <input type="radio" id="all" name="export" value="all" />
+              <label htmlFor="all">All</label> <br />
               <input type="radio" id="export" name="export" value="export" />
-              <label for="export">Export</label> <br />
+              <label htmlFor="export">Export</label> <br />
               <input
                 type="radio"
                 id="domestic"
                 name="export"
                 value="domestic"
               />
-              <label for="domestic">Domestic</label> <br />
+              <label htmlFor="domestic">Domestic</label> <br />
             </div>
             <div className="product-type">
               <input type="radio" id="c11" name="product-type" value="c11" />
-              <label for="c11">C11</label> <br />
+              <label htmlFor="c11">C11</label> <br />
               <input type="radio" id="c10" name="product-type" value="c10" />
-              <label for="c10">C10</label> <br />
+              <label htmlFor="c10">C10</label> <br />
               <input type="radio" id="c03" name="product-type" value="c03" />
-              <label for="c03">C03</label> <br />
+              <label htmlFor="c03">C03</label> <br />
             </div>
             <div className="coil-dimensions">
               <section className="thickness">
@@ -47,7 +47,7 @@ function createSchedule() {
               </section>
             </div>
             <div className="idia-sleeve">
-              <label for="idia">Idia</label>
+              <label htmlFor="idia">Idia</label>
               <select name="Idia" id="idia">
                 <option>op 1</option>
                 <option>op 2</option>
@@ -56,7 +56,7 @@ function createSchedule() {
                 <option>op 5</option>
               </select>{" "}
               <br />
-              <label for="sleeve">Sleeve</label>
+              <label htmlFor="sleeve">Sleeve</label>
               <select name="sleeve" id="sleeve">
                 <option>op 1</option>
                 <option>op 2</option>
@@ -70,13 +70,13 @@ function createSchedule() {
           <div className="create-schedule__container-2">
             <div>
               <input type="radio" id="fp" name="fp-check" value="fp" />
-              <label for="fp">FP</label> <br />
+              <label htmlFor="fp">FP</label> <br />
               <input type="radio" id="not-fp" name="fp-check" value="not fp" />
-              <label for="not-fp">Not in FP</label>
+              <label htmlFor="not-fp">Not in FP</label>
             </div>
 
             <div>
-              <label for="grade">Grade</label>
+              <label htmlFor="grade">Grade</label>
               <select name="grade" id="grade">
                 <option>op 1</option>
                 <option>op 2</option>
@@ -86,7 +86,7 @@ function createSchedule() {
               </select>
             </div>
             <div>
-              <label for="quality">Quality</label>
+              <label htmlFor="quality">Quality</label>
               <select name="quality" id="quality">
                 <option>op 1</option>
                 <option>op 2</option>
@@ -96,7 +96,7 @@ function createSchedule() {
               </select>
             </div>
             <div>
-              <label for="tdc">TDC</label>
+              <label htmlFor="tdc">TDC</label>
               <select name="tdc" id="tdc">
                 <option>op 1</option>
                 <option>op 2</option>
@@ -106,7 +106,7 @@ function createSchedule() {
               </select>
             </div>
             <div>
-              <label for="post-treat">Post Treat</label>
+              <label htmlFor="post-treat">Post Treat</label>
               <select name="treat" id="treat">
                 <option>op 1</option>
                 <option>op 2</option>
