@@ -1,24 +1,55 @@
 import React from "react";
 
-function table() {
+function table({ data }) {
+  const Row = ({ row }) => {
+    return (
+      <tr>
+        <td>{row["S. No"]}</td>
+        <td>{row["i2 plan date"]}</td>
+        <td>{row["Dispatch Week"]}</td>
+        <td>{row["Coil ID"]}</td>
+        <td>{row["Thickness"]}</td>
+        <td>{row["Width"]}</td>
+        <td>{row["Weight"]}</td>
+        <td>{row["Calc Wt"]}</td>
+        <td>{row["Min Wt"]}</td>
+        <td>{row["Max Wt"]}</td>
+        <td>{row["Prod"]}</td>
+        <td>{row["Sf Rou"]}</td>
+        <td>{row["Oil/Chrome"]}</td>
+        <td>{row["Quality"]}</td>
+        <td>{row["Grade"]}</td>
+        <td>{row["TDC"]}</td>
+        <td>{row["Mk Customer"]}</td>
+        <td>{row["Order/Item"]}</td>
+        <td>{row["Exit Idia"]}</td>
+        <td>{row["New Type"]}</td>
+        <td>{row["Order Type"]}</td>
+        <td>{row["Coat"]}</td>
+        <td>{row["Roll Wk"]}</td>
+        <td>{row["Delivery Wk"]}</td>
+        <td>{row["LPST"]}</td>
+        <td>{row["EPST"]}</td>
+      </tr>
+    );
+  };
   return (
     <div className="table-container">
       <table>
         <thead>
           <tr>
-            <th>S.No</th>
-            <th>Month</th>
-            <th>i2 plan dt</th>
-            <th>Desp. Week</th>
+            <th>S. No</th>
+            <th>i2 plan date</th>
+            <th>Dispatch Week</th>
             <th>Coil ID</th>
-            <th>Thick</th>
+            <th>Thickness</th>
             <th>Width</th>
             <th>Weight</th>
-            <th>Calc. Wt.</th>
-            <th>Min Wt.</th>
-            <th>Max Wt.</th>
+            <th>Calc Wt</th>
+            <th>Min Wt</th>
+            <th>Max Wt</th>
             <th>Prod</th>
-            <th>SF Rou</th>
+            <th>Sf Rou</th>
             <th>Oil/Chrome</th>
             <th>Quality</th>
             <th>Grade</th>
@@ -28,315 +59,17 @@ function table() {
             <th>Exit Idia</th>
             <th>New Type</th>
             <th>Order Type</th>
-            <th>Slv</th>
             <th>Coat</th>
-            <th>Roll Week</th>
-            <th>Delivery Week</th>
+            <th>Roll Wk</th>
+            <th>Delivery Wk</th>
             <th>LPST</th>
             <th>EPST</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td></td>
-            <td>25-JUN-2022</td>
-            <td>202222</td>
-            <td>2562530000</td>
-            <td>1.397</td>
-            <td>1325</td>
-            <td>25.120</td>
-            <td>25.299</td>
-            <td>8</td>
-            <td>30</td>
-            <td>C03</td>
-            <td>A</td>
-            <td>Oil Used</td>
-            <td>TATAHIF</td>
-            <td>HIF</td>
-            <td>GA03</td>
-            <td>Hyundai Steel</td>
-            <td>9516076439</td>
-            <td>508</td>
-            <td>Domestic</td>
-            <td>F</td>
-            <td></td>
-            <td>96</td>
-            <td>202227</td>
-            <td>202228</td>
-            <td>02-JUL-2022</td>
-            <td>25-JUN-2022</td>
-          </tr>
+          {data.map((row,i) => (
+            <Row key={i} row={row} />
+          ))}
         </tbody>
       </table>
     </div>
