@@ -1,4 +1,4 @@
-#About the Project
+# About the Project
 
 I made this application as part of my internship project at Tata Steel. This application fetches the details of cold rolled coils queued for galvanisation. 
 It offers features to the operator such as filters and checkboxes to narrow down on a particular coil order. It displays all information in a dense table.
